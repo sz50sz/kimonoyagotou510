@@ -4,6 +4,7 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="きもの屋五一〇公式サイト。新品やリサイクル品、アウトレット品の着物や帯、新品の小物の販売から着物の手入れまで、全てのサービスを提供するお店です。">
 
     <title><?php bloginfo('name'); ?> | きもの屋五一〇</title>
 
