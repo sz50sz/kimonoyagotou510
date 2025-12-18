@@ -193,7 +193,7 @@
 <section class="news" id="news">
             <div class="news__inner fade-in">
                 <div class="news__item">
-                    <h3 class="news__title">お知らせ</h3>
+                    <h2 class="news__title">お知らせ</h2>
 
                     <ul class="news__list">
                         <li class="news__item">
