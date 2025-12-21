@@ -520,7 +520,7 @@ img {
             height: 100%;
             top: 0;
             left: 0;
-            transition: opacity .8s ease-in-out;
+            transition: opacity 3s ease-in-out;
 
             &.active {
                 opacity: 1;

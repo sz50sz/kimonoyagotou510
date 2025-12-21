@@ -75,7 +75,7 @@ function startAutoPlay() {
     timer = setInterval(() => {
         let next = (index + 1) % slides.length;
         showSlide(next);
-    }, 3000);
+    }, 6000);
 }
 
 dots.forEach(dot => {
