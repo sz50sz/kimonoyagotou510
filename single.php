@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 
-<body class="single">
+<?php if (have_posts()) : ?>
+<?php while (have_posts()) : the_post(); ?>
+
     <div class="washi-bg"></div>
 
     <main class="main">
@@ -13,8 +15,8 @@
                 <!-- 公開日 -->
                 <p class="notice__time"><?php echo get_the_date('Y年n月j日'); ?></p>
 
-                <!-- サブタイトル（カスタムフィールドにする場合）-->
-                <?php if ( get_field('subtitle') ) : ?>
+                <!-- サブタイトル（カスタムフィールド） -->
+                <?php if ( function_exists('get_field') && get_field('subtitle') ) : ?>
                     <h3 class="notice__subtitle">
                         <?php the_field('subtitle'); ?>
                     </h3>
@@ -31,17 +33,14 @@
         <section class="newsnavi">
             <div class="newsnavi__inner">
 
-                <!-- 前の記事 -->
                 <div class="newsnavi__back underline-animation">
                     <?php previous_post_link('%link', '＜　前の記事へ'); ?>
                 </div>
 
-                <!-- 記事一覧 -->
                 <a href="<?php echo get_permalink( get_option('page_for_posts') ); ?>" class="newsnavi__all underline-animation">
                     記事一覧
                 </a>
 
-                <!-- 次の記事 -->
                 <div class="newsnavi__next underline-animation">
                     <?php next_post_link('%link', '次の記事へ　＞'); ?>
                 </div>
@@ -49,5 +48,8 @@
             </div>
         </section>
     </main>
+
+<?php endwhile; ?>
+<?php endif; ?>
 
 <?php get_footer(); ?>

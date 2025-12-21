@@ -597,6 +597,7 @@ img {
   position: fixed;
   width: 100%;
   top: 0;
+  left: 0;
   background: #fbfaf5 url(../image/item/2x/washi.webp) no-repeat center center/cover;
   z-index: 999;
 }
