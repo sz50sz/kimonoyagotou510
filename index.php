@@ -29,11 +29,10 @@
                             <picture>
                                 <source media="(min-width: 640px)" srcset="<?php echo get_template_directory_uri(); ?>/image/images/mv1_lg.webp">
                                 <source media="(max-width: 639px)" srcset="<?php echo get_template_directory_uri(); ?>/image/images/mv1_sm.webp">
-                                <img src="<?php echo get_template_directory_uri(); ?>/image/images/mv1_sm.webp" alt="" fetchpriority="high">
+                                <img src="<?php echo get_template_directory_uri(); ?>/image/images/mv1_sm.webp" alt="" fetchpriority="high" loading="eager" decoding="async">
                             </picture>
                         </li>
 
-                        <!-- 2〜4枚目も同じくパスだけWP化 -->
                         <li class="pic__item">
                             <picture>
                                 <source media="(min-width: 640px)" srcset="<?php echo get_template_directory_uri(); ?>/image/images/mv2_lg.webp">
@@ -66,7 +65,7 @@
                 </div>
 
                 <a href="<?php echo home_url(); ?>" class="mainvisual__logo">
-                    <h1><img src="<?php echo get_template_directory_uri(); ?>/image/logo.webp" alt="きもの屋五一〇のロゴ"></h1>
+                    <h1><img src="<?php echo get_template_directory_uri(); ?>/image/logo.webp" alt="きもの屋五一〇のロゴ" loading="eager" decoding="async"></h1>
                 </a>
             </div>
         </section>
@@ -127,7 +126,7 @@
                                         <dl>
                                             <dt>ごとう呉服店</dt>
                                             <dd>岐阜県羽島郡笠松町下本町95</dd>
-                                            <dd>営業日：木、金、土　10：00〜17：00</dd>
+                                            <dd>営業日：<?php echo esc_html( SCF::get_option_meta('option', 'kasamatsu_eigyoubi') ); ?></dd>
                                             <dd>電話番号：058-387-2005</dd>
                                         </dl>
                                     </div>
@@ -150,7 +149,7 @@
                                         <dl>
                                             <dt>きもの屋五一〇　岐阜店</dt>
                                             <dd>岐阜市橋本町岐阜シティータワー43 2階</dd>
-                                            <dd>営業日：全日　11：00〜17：00</dd>
+                                            <dd>営業日：<?php echo esc_html( SCF::get_option_meta('option', 'gifu_eigyoubi') ); ?></dd>
                                             <dd>電話番号：058-265-5110</dd>
                                         </dl>
                                     </div>
@@ -173,7 +172,7 @@
                                         <dl>
                                             <dt>きもの屋五一〇　いりなか店</dt>
                                             <dd>名古屋市昭和区滝川町59-1 五藤ビル杁中1F</dd>
-                                            <dd>営業日：金、土、日、月　10：00〜17：00</dd>
+                                            <dd>営業日：<?php echo esc_html(SCF::get_option_meta('option', 'irinaka_eigyoubi') ); ?></dd>
                                             <dd>電話番号：052-833-5025</dd>
                                         </dl>
                                     </div>

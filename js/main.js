@@ -75,7 +75,7 @@ function startAutoPlay() {
     timer = setInterval(() => {
         let next = (index + 1) % slides.length;
         showSlide(next);
-    }, 6000);
+    }, 7000);
 }
 
 dots.forEach(dot => {
@@ -159,5 +159,14 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             navi.classList.remove("is-fixed");
         }
+    });
+});
+
+//画面の都邑に飛ぶやつ
+document.querySelector('a[href^="#"]').addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    target.scrollIntoView({
+        behavior: 'smooth'
     });
 });

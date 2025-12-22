@@ -123,11 +123,10 @@ img {
     inset: 0;
     z-index: -1;
     background-image: url("../image/item/2x/washi.webp");
-    background-size: cover;
-    background-repeat: repeat-y;
+    background-size: 800px auto;
+    background-repeat: repeat;
     background-position: center top;
-    height: 300vh;
-    opacity: 0.6;
+    pointer-events: none;
 }
 
 .underline-animation {
@@ -520,7 +519,7 @@ img {
             height: 100%;
             top: 0;
             left: 0;
-            transition: opacity 3s ease-in-out;
+            transition: opacity 4s ease-in-out;
 
             &.active {
                 opacity: 1;
