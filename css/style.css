@@ -63,6 +63,26 @@ img {
   width: 100%;
   overflow: hidden;
   transition: all 0.3s ease;
+  position: relative;
+  background-color: #1c273d;
+  overflow: hidden;
+}
+.navi::before, .navi::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  z-index: 5;
+  pointer-events: none;
+}
+.navi::before {
+  left: 0;
+  background: linear-gradient(to right, #1c273d 0%, rgba(28, 39, 61, 0) 100%);
+}
+.navi::after {
+  right: 0;
+  background: linear-gradient(to left, #1c273d 0%, rgba(28, 39, 61, 0) 100%);
 }
 .navi__inner {
   max-width: 980px;

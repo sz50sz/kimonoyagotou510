@@ -37,10 +37,9 @@
                     <?php previous_post_link('%link', '＜　前の記事へ'); ?>
                 </div>
 
-                <a href="<?php echo get_permalink( get_option('page_for_posts') ); ?>" class="newsnavi__all underline-animation">
-                    記事一覧
-                </a>
-
+<a href="<?php echo home_url('/news'); ?>" class="newsnavi__all underline-animation">
+    記事一覧
+</a>
                 <div class="newsnavi__next underline-animation">
                     <?php next_post_link('%link', '次の記事へ　＞'); ?>
                 </div>

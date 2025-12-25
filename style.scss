@@ -160,6 +160,36 @@ img {
     width: 100%;
     overflow: hidden;
     transition: all 0.3s ease;
+    position: relative;
+    background-color: $color-main;
+    overflow: hidden;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 50px;
+        height: 100%;
+        z-index: 5;
+        pointer-events: none;
+    }
+
+    // 左側フェード
+    &::before {
+        left: 0;
+        background: linear-gradient(to right,
+                $color-main 0%,
+                rgba($color-main, 0) 100%);
+    }
+
+    // 右側フェード
+    &::after {
+        right: 0;
+        background: linear-gradient(to left,
+                $color-main 0%,
+                rgba($color-main, 0) 100%);
+    }
 
     &__inner {
         @include inner();
