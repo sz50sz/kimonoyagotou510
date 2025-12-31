@@ -36,3 +36,5 @@ add_filter('register_post_type_args', function($args, $post_type) {
 }, 10, 2);
 
 add_theme_support('post-thumbnails');
+
+SCF::add_options_page( '営業時間', '営業時間', 'manage_options', 'theme-options' );

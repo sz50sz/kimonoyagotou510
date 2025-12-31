@@ -126,7 +126,7 @@
                                         <dl>
                                             <dt>ごとう呉服店</dt>
                                             <dd>岐阜県羽島郡笠松町下本町95</dd>
-                                            <dd>営業日：<?php echo esc_html( SCF::get_option_meta('option', 'kasamatsu_eigyoubi') ); ?></dd>
+                                            <dd>営業日：<?php echo esc_html( SCF::get_option_meta('theme-options', 'kasamatsu_eigyoubi') ); ?></dd>
                                             <dd>電話番号：058-387-2005</dd>
                                         </dl>
                                     </div>
@@ -149,7 +149,7 @@
                                         <dl>
                                             <dt>きもの屋五一〇　岐阜店</dt>
                                             <dd>岐阜市橋本町岐阜シティータワー43 2階</dd>
-                                            <dd>営業日：<?php echo esc_html( SCF::get_option_meta('option', 'gifu_eigyoubi') ); ?></dd>
+                                            <dd>営業日：<?php echo esc_html( SCF::get_option_meta('theme-options', 'gifu_eigyoubi') ); ?></dd>
                                             <dd>電話番号：058-265-5110</dd>
                                         </dl>
                                     </div>
@@ -172,7 +172,7 @@
                                         <dl>
                                             <dt>きもの屋五一〇　いりなか店</dt>
                                             <dd>名古屋市昭和区滝川町59-1 五藤ビル杁中1F</dd>
-                                            <dd>営業日：<?php echo esc_html(SCF::get_option_meta('option', 'irinaka_eigyoubi') ); ?></dd>
+                                            <dd>営業日：<?php echo esc_html(SCF::get_option_meta('theme-options', 'irinaka_eigyoubi') ); ?></dd>
                                             <dd>電話番号：052-833-5025</dd>
                                         </dl>
                                     </div>
