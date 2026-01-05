@@ -1,4 +1,11 @@
 <?php
+wp_enqueue_style(
+  'main-style',
+  get_stylesheet_uri(),
+  [],
+  '1.0.0'
+);
+
 function my_scripts() {
     wp_enqueue_script(
         'main-js',

@@ -2,16 +2,34 @@
 <html <?php language_attributes(); ?> class="no-js">
 
 <head>
-    <meta charset="<?php bloginfo('charset'); ?>">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="きもの屋五一〇公式サイト。新品やリサイクル品、アウトレット品の着物や帯、新品の小物の販売から着物の手入れまで、全てのサービスを提供するお店です。">
-
-    <title><?php bloginfo('name'); ?> | きもの屋五一〇</title>
-
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/the-new-css-reset/css/reset.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
-
+    <meta property="og:title" content="きもの屋五一〇">
+    <meta property="og:description" content="きもの屋五一〇 公式サイト｜kimonoya510">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sn-50.boo.jp/kimonoyagotou510/">
+    <meta property="og:image" content="https://kimonoya510.jp/wp-content/themes/kimonoyagotou510/image/ogp.png">
+    <meta property="og:site_name" content="きもの屋五一〇">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="きもの屋五一〇">
+    <meta name="twitter:description" content="きもの屋五一〇 公式サイト｜kimonoya510">
+    <meta name="twitter:image" content="https://kimonoya510.jp/wp-content/themes/kimonoyagotou510/image/ogp.png">
+    <title>きもの屋五一〇</title>
+    <link rel="preload"
+      href="https://cdn.jsdelivr.net/npm/the-new-css-reset/css/reset.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/the-new-css-reset/css/reset.min.css">
+    </noscript>
+    <link rel="canonical" href="https://sn-50.boo.jp/kimonoyagotou510/">
+    <link rel="icon" href="/logo.webp">
+    <link rel="apple-touch-icon" href="/logo.webp">
     <?php wp_head(); ?>
+    <script>
+  document.documentElement.classList.replace('no-js','js');
+    </script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -29,7 +47,7 @@
                             <picture>
                                 <source media="(min-width: 640px)" srcset="<?php echo get_template_directory_uri(); ?>/image/images/mv1_lg.webp">
                                 <source media="(max-width: 639px)" srcset="<?php echo get_template_directory_uri(); ?>/image/images/mv1_sm.webp">
-                                <img src="<?php echo get_template_directory_uri(); ?>/image/images/mv1_sm.webp" alt="" fetchpriority="high" loading="eager" decoding="async">
+                                <img src="<?php echo get_template_directory_uri(); ?>/image/images/mv1_sm.webp" alt="きもの屋五一〇の店舗内観" fetchpriority="high" loading="eager" decoding="async">
                             </picture>
                         </li>
 
@@ -37,21 +55,21 @@
                             <picture>
                                 <source media="(min-width: 640px)" srcset="<?php echo get_template_directory_uri(); ?>/image/images/mv2_lg.webp">
                                 <source media="(max-width: 639px)" srcset="<?php echo get_template_directory_uri(); ?>/image/images/mv2_sm.webp">
-                                <img src="<?php echo get_template_directory_uri(); ?>/image/images/mv2_sm.webp" alt="" loading="lazy">
+                                <img src="<?php echo get_template_directory_uri(); ?>/image/images/mv2_sm.webp" alt="きもの屋五一〇の店舗内観" loading="lazy">
                             </picture>
                         </li>
                         <li class="pic__item">
                             <picture>
                                 <source media="(min-width: 640px)" srcset="<?php echo get_template_directory_uri(); ?>/image/images/mv3_lg.webp">
                                 <source media="(max-width: 639px)" srcset="<?php echo get_template_directory_uri(); ?>/image/images/mv3_sm.webp">
-                                <img src="<?php echo get_template_directory_uri(); ?>/image/images/mv3_sm.webp" alt="" loading="lazy">
+                                <img src="<?php echo get_template_directory_uri(); ?>/image/images/mv3_sm.webp" alt="きもの屋五一〇の店舗内観" loading="lazy">
                             </picture>
                         </li>
                         <li class="pic__item">
                             <picture>
                                 <source media="(min-width: 640px)" srcset="<?php echo get_template_directory_uri(); ?>/image/images/mv4_lg.webp">
                                 <source media="(max-width: 639px)" srcset="<?php echo get_template_directory_uri(); ?>/image/images/mv4_sm.webp">
-                                <img src="<?php echo get_template_directory_uri(); ?>/image/images/mv4_sm.webp" alt="" loading="lazy">
+                                <img src="<?php echo get_template_directory_uri(); ?>/image/images/mv4_sm.webp" alt="きもの屋五一〇の店舗内観" loading="lazy">
                             </picture>
                         </li>
                     </ul>
@@ -75,7 +93,7 @@
                 <ul class="navi__list">
                     <li class="navi__item"><a href="<?php echo home_url(); ?>">ホーム</a></li>
                     <li class="navi__item"><a href="https://kimonoya510.shopselect.net/">オンラインストア</a></li>
-                    <li class="navi__item"><a href="">相談</a></li>
+                    <li class="navi__item"><a href="#">相談</a></li>
                     <li class="navi__item"><a href="<?php echo home_url('/'); ?>#introduction">店舗紹介</a></li>
                     <li class="navi__item"><a href="<?php echo home_url('/'); ?>#location">店舗一覧</a></li>
                     <li class="navi__item"><a href="<?php echo home_url('/'); ?>#news">お知らせ</a></li>
@@ -93,7 +111,7 @@
             <div class="introduction__inner fade-in">
                 <h2 class="introduction__title">店舗紹介</h2>
                 <div class="introduction__info">
-                    <img src="<?php echo get_template_directory_uri(); ?>/image/images/introduction.webp" alt="" class="introduction__pic" loading="lazy">
+                    <img src="<?php echo get_template_directory_uri(); ?>/image/images/introduction.webp" alt="ごとう呉服店の内観イメージ" class="introduction__pic" loading="lazy">
                     <div class="introduction__text">
                         <p>新品やリサイクル品、アウトレット品の着物や帯、新品の小物の販売から着物の手入れまで、全てのサービスを提供するお店です。買っていただくだけでなく、着物のお手入れに力を入れており、買っていただいたあとのアフターケアを大切にしています。<br>ごとう呉服店は創業120年以上の歴史を持ち、お客様の信頼は当店の宝物です。
                         </p>
@@ -120,7 +138,7 @@
                     <li class="location__item card">
                         <div class="card__content show" id="screen1">
                             <div class="card__inner">
-                                <img src="<?php echo get_template_directory_uri(); ?>/image/images/kasamatsu.webp" alt="" class="card__pic" loading="lazy">
+                                <img src="<?php echo get_template_directory_uri(); ?>/image/images/kasamatsu.webp" alt="ごとう呉服店の店舗紹介画像" class="card__pic" loading="lazy">
                                 <div class="card__info">
                                     <div class="card__text">
                                         <dl>
@@ -143,7 +161,7 @@
                     <li class="location__item card">
                         <div class="card__content" id="screen2">
                             <div class="card__inner">
-                                <img src="<?php echo get_template_directory_uri(); ?>/image/images/gifu.webp" alt="" class="card__pic" loading="lazy">
+                                <img src="<?php echo get_template_directory_uri(); ?>/image/images/gifu.webp" alt="きもの屋五一〇　岐阜店の店舗紹介画像" class="card__pic" loading="lazy">
                                 <div class="card__info">
                                     <div class="card__text">
                                         <dl>
@@ -166,7 +184,7 @@
                     <li class="location__item card">
                         <div class="card__content" id="screen3">
                             <div class="card__inner">
-                                <img src="<?php echo get_template_directory_uri(); ?>/image/images/irinaka.webp" alt="" class="card__pic" loading="lazy">
+                                <img src="<?php echo get_template_directory_uri(); ?>/image/images/irinaka.webp" alt="きもの屋五一〇　いりなか店の店舗紹介画像" class="card__pic" loading="lazy">
                                 <div class="card__info">
                                     <div class="card__text">
                                         <dl>
@@ -273,7 +291,7 @@
                         創業100余年の老舗呉服店ならではの確かな技術を持った職人が丁寧に仕上げます。当店の商品でなくても承ります。まずはお気軽にご相談ください！
                     </p>
                 </div>
-                <a href="" class="btn">相談する</a>
+                <a href="#" class="btn">相談する</a>
             </div>
         </section>
     </main>
