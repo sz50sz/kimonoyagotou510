@@ -3,7 +3,6 @@
 <?php if (have_posts()) : ?>
 <?php while (have_posts()) : the_post(); ?>
 
-    <div class="washi-bg"></div>
 
     <main class="main">
         <section class="notice">

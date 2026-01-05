@@ -8,13 +8,13 @@
     <meta property="og:description" content="きもの屋五一〇 公式サイト｜kimonoya510">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sn-50.boo.jp/kimonoyagotou510/">
-    <meta property="og:image" content="https://kimonoya510.jp/wp-content/themes/kimonoyagotou510/image/ogp.png">
+    <meta property="og:image" content="https://sn-50.boo.jp/kimonoyagotou510/wp-content/themes/kimonoyagotou510/image/ogp.png">
     <meta property="og:site_name" content="きもの屋五一〇">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="きもの屋五一〇">
     <meta name="twitter:description" content="きもの屋五一〇 公式サイト｜kimonoya510">
-    <meta name="twitter:image" content="https://kimonoya510.jp/wp-content/themes/kimonoyagotou510/image/ogp.png">
-    <title>きもの屋五一〇</title>
+    <meta name="twitter:image" content="https://sn-50.boo.jp/kimonoyagotou510/wp-content/themes/kimonoyagotou510/image/ogp.png">
+    <title>きもの屋五一〇 公式サイト｜kimonoya510</title>
     <link rel="preload"
       href="https://cdn.jsdelivr.net/npm/the-new-css-reset/css/reset.min.css"
       as="style"
@@ -24,9 +24,8 @@
         href="https://cdn.jsdelivr.net/npm/the-new-css-reset/css/reset.min.css">
     </noscript>
     <link rel="canonical" href="https://sn-50.boo.jp/kimonoyagotou510/">
-    <link rel="icon" href="/logo.webp">
-    <link rel="apple-touch-icon" href="/logo.webp">
-    <?php wp_head(); ?>
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/image/logo.webp">
+    <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/image/logo.webp">    <?php wp_head(); ?>
     <script>
   document.documentElement.classList.replace('no-js','js');
     </script>
@@ -228,9 +227,9 @@
 <a href="<?php the_permalink(); ?>" class="article">
 
     <?php if (has_post_thumbnail()) : ?>
-        <img src="<?php the_post_thumbnail_url(); ?>" alt="" class="article__pic" loading="lazy">
+        <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php echo esc_attr( get_the_title() . 'のサムネイル' ); ?>" class="article__pic" loading="lazy">
     <?php else : ?>
-        <img src="<?php echo get_template_directory_uri(); ?>/image/images/news.webp" alt="" class="article__pic" loading="lazy">
+        <img src="<?php echo get_template_directory_uri(); ?>/image/images/news.webp" alt="記事なし" class="article__pic" loading="lazy">
     <?php endif; ?>
 
     <div class="article__info">
@@ -249,7 +248,8 @@
                     <a href="<?php echo home_url('/news'); ?>" class="more underline-animation">もっと見る＞</a>
                 </div>
             </div>
-        </section>        <section class="banner " id="banner">
+        </section>
+        <section class="banner " id="banner">
             <div class="banner__inner fade-in">
                 <ul class="banner__list">
                     <li>
