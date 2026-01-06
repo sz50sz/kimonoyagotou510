@@ -162,30 +162,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-//画面の都邑に飛ぶやつ
-document.addEventListener('DOMContentLoaded', () => {
-    const links = document.querySelectorAll('a[href^="#"]');
-    const header = document.querySelector('.header');
-    const headerHeight = header ? header.offsetHeight : 0;
+//画面の途中に飛ぶやつ
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
 
-    links.forEach(link => {
-        link.addEventListener('click', e => {
-            const href = link.getAttribute('href');
-            const target = document.querySelector(href);
+        const target = document.querySelector(this.getAttribute('href'));
+        if (!target) return;
 
-            if (!target) return;
+        const headerOffset = 80; // ヘッダー高さ調整
+        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerOffset;
 
-            e.preventDefault();
-
-            const targetPosition =
-                target.getBoundingClientRect().top +
-                window.pageYOffset -
-                headerHeight;
-
-            window.scrollTo({
-                top: targetPosition,
-                behavior: 'smooth'
-            });
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
         });
     });
 });
