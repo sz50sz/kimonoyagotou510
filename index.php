@@ -46,7 +46,7 @@
                             <picture>
                                 <source media="(min-width: 640px)" srcset="<?php echo get_template_directory_uri(); ?>/image/images/mv1_lg.webp">
                                 <source media="(max-width: 639px)" srcset="<?php echo get_template_directory_uri(); ?>/image/images/mv1_sm.webp">
-                                <img src="<?php echo get_template_directory_uri(); ?>/image/images/mv1_sm.webp" alt="きもの屋五一〇の店舗内観" fetchpriority="high" loading="eager" decoding="async">
+                                <img src="<?php echo get_template_directory_uri(); ?>/image/images/mv1_sm.webp" alt="きもの屋五一〇の店舗内観①" fetchpriority="high" loading="eager" decoding="async">
                             </picture>
                         </li>
 
@@ -54,21 +54,21 @@
                             <picture>
                                 <source media="(min-width: 640px)" srcset="<?php echo get_template_directory_uri(); ?>/image/images/mv2_lg.webp">
                                 <source media="(max-width: 639px)" srcset="<?php echo get_template_directory_uri(); ?>/image/images/mv2_sm.webp">
-                                <img src="<?php echo get_template_directory_uri(); ?>/image/images/mv2_sm.webp" alt="きもの屋五一〇の店舗内観" loading="lazy">
+                                <img src="<?php echo get_template_directory_uri(); ?>/image/images/mv2_sm.webp" alt="きもの屋五一〇の店舗内観②" loading="lazy">
                             </picture>
                         </li>
                         <li class="pic__item">
                             <picture>
                                 <source media="(min-width: 640px)" srcset="<?php echo get_template_directory_uri(); ?>/image/images/mv3_lg.webp">
                                 <source media="(max-width: 639px)" srcset="<?php echo get_template_directory_uri(); ?>/image/images/mv3_sm.webp">
-                                <img src="<?php echo get_template_directory_uri(); ?>/image/images/mv3_sm.webp" alt="きもの屋五一〇の店舗内観" loading="lazy">
+                                <img src="<?php echo get_template_directory_uri(); ?>/image/images/mv3_sm.webp" alt="きもの屋五一〇の店舗内観③" loading="lazy">
                             </picture>
                         </li>
                         <li class="pic__item">
                             <picture>
                                 <source media="(min-width: 640px)" srcset="<?php echo get_template_directory_uri(); ?>/image/images/mv4_lg.webp">
                                 <source media="(max-width: 639px)" srcset="<?php echo get_template_directory_uri(); ?>/image/images/mv4_sm.webp">
-                                <img src="<?php echo get_template_directory_uri(); ?>/image/images/mv4_sm.webp" alt="きもの屋五一〇の店舗内観" loading="lazy">
+                                <img src="<?php echo get_template_directory_uri(); ?>/image/images/mv4_sm.webp" alt="きもの屋五一〇の店舗内観④" loading="lazy">
                             </picture>
                         </li>
                     </ul>
@@ -104,7 +104,7 @@
     </header>
 
     <main class="main">
-        <section class="introduction " id="introduction">
+        <section class="introduction" id="introduction">
             <div class="motif motif--left"></div>
             <div class="motif motif--right"></div>
             <div class="introduction__inner fade-in">
