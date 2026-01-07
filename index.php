@@ -14,6 +14,7 @@
     <meta name="twitter:title" content="きもの屋五一〇">
     <meta name="twitter:description" content="きもの屋五一〇 公式サイト｜kimonoya510">
     <meta name="twitter:image" content="https://sn-50.boo.jp/kimonoyagotou510/wp-content/themes/kimonoyagotou510/image/ogp.png">
+    <meta name="description" content="岐阜・名古屋で着物の販売・お手入れを行う創業120年以上の老舗呉服店、きもの屋五一〇の公式サイトです。">
     <title>きもの屋五一〇 公式サイト｜kimonoya510</title>
     <link rel="preload"
       href="https://cdn.jsdelivr.net/npm/the-new-css-reset/css/reset.min.css"
