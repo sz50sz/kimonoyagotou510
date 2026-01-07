@@ -93,7 +93,7 @@
                 <ul class="navi__list">
                     <li class="navi__item"><a href="<?php echo home_url(); ?>">ホーム</a></li>
                     <li class="navi__item"><a href="https://kimonoya510.shopselect.net/">オンラインストア</a></li>
-                    <li class="navi__item"><a href="#">相談</a></li>
+                    <li class="navi__item"><a href="https://www.instagram.com/direct/t/117399706310577">相談</a></li>
                     <li class="navi__item"><a href="<?php echo home_url('/'); ?>#introduction">店舗紹介</a></li>
                     <li class="navi__item"><a href="<?php echo home_url('/'); ?>#location">店舗一覧</a></li>
                     <li class="navi__item"><a href="<?php echo home_url('/'); ?>#news">お知らせ</a></li>
@@ -292,13 +292,13 @@
                         創業100余年の老舗呉服店ならではの確かな技術を持った職人が丁寧に仕上げます。当店の商品でなくても承ります。まずはお気軽にご相談ください！
                     </p>
                 </div>
-                <a href="#" class="btn">相談する</a>
+                <a href="https://www.instagram.com/direct/t/117399706310577" class="btn">相談する</a>
             </div>
         </section>
     </main>
     <footer class="footer ">
         <div class="footer__inner fade-in">
-            <a href="#"><img class="footer__logo" src="<?php echo get_template_directory_uri(); ?>/image/logo.webp" alt="きもの屋五一〇のロゴ" loading="lazy"></a><br>
+            <a href="<?php echo home_url(); ?>"><img class="footer__logo" src="<?php echo get_template_directory_uri(); ?>/image/logo.webp" alt="きもの屋五一〇のロゴ" loading="lazy"></a><br>
             <div class="footer__info">
                 <div class="footer__link">
                     <a href="" class="footer__onlinestore underline-animation">きもの屋五一〇　ONLINE STORE</a>
@@ -329,7 +329,7 @@
                     </dl>
                 </div>
             </div>
-            <small class="footer__copy">copyright kimonoya510</small>
+            <small class="footer__copy">© kimonoya510 2026</small>
         </div>
     </footer>
     <?php wp_footer(); ?>

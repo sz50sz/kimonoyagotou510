@@ -1,16 +1,25 @@
-<!DOCTYPE html>
-<html <?php language_attributes(); ?> class="no-js">
 <head>
-    <meta charset="<?php bloginfo('charset'); ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="<?php bloginfo('charset'); ?>">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="canonical" href="https://sn-50.boo.jp/kimonoyagotou510/">
+  <link rel="preload"
+    href="https://cdn.jsdelivr.net/npm/the-new-css-reset/css/reset.min.css"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/the-new-css-reset/css/reset.min.css">
+  </noscript>
 
-    <?php wp_head(); ?>
+  <link rel="canonical" href="https://sn-50.boo.jp/kimonoyagotou510/">
+  <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/image/logo.webp">
+  <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/image/logo.webp">
 
-    <script>
-      document.documentElement.classList.replace('no-js','js');
-    </script>
+  <?php wp_head(); ?>
+
+  <script>
+    document.documentElement.classList.replace('no-js','js');
+  </script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -18,10 +27,10 @@
 
 <div class="washi-bg"></div>
 
-<header class="header">
+<header class="header header-sub">
     <section class="header__logo">
         <h1>
-            <img src="<?php echo get_template_directory_uri(); ?>/image/logo.webp" alt="きもの屋五一〇のロゴ">
+            <a href="<?php echo home_url('/'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/image/logo.webp" alt="きもの屋五一〇のロゴ"></a>
         </h1>
     </section>
 

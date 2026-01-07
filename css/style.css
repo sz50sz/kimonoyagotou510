@@ -14,6 +14,10 @@ img {
   height: auto;
 }
 
+section {
+  scroll-margin-top: 80px;
+}
+
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -65,7 +69,6 @@ img {
   transition: all 0.3s ease;
   position: relative;
   background-color: #1c273d;
-  overflow: hidden;
 }
 .navi::before, .navi::after {
   content: "";
@@ -612,7 +615,7 @@ img {
   margin-bottom: 1.875rem;
 }
 
-.single .header {
+.header-sub {
   position: fixed;
   width: 100%;
   top: 0;
@@ -620,13 +623,14 @@ img {
   background: #fbfaf5 url(../image/item/2x/washi.webp) no-repeat center center/cover;
   z-index: 999;
 }
-.single .header__logo {
+.header-sub .header__logo {
   display: block;
   width: 70px;
   margin: 20px 0;
   margin-right: auto;
   margin-left: auto;
 }
+
 .single .notice {
   padding: 17.5rem 0 3.75rem 0;
 }
@@ -661,10 +665,10 @@ img {
   align-items: center;
 }
 
-.newsall {
+.archive .newsall {
   padding: 17.5rem 0 3.75rem 0;
 }
-.newsall__inner {
+.archive .newsall__inner {
   max-width: 980px;
   width: 88.8888888889%;
   margin-left: auto;
@@ -678,46 +682,44 @@ img {
   justify-content: space-between;
 }
 @media (width >= 640px) {
-  .newsall__inner {
+  .archive .newsall__inner {
     grid-template-columns: repeat(3, 1fr);
     row-gap: 3.75rem;
   }
 }
-
-.ncard {
+.archive .ncard {
   background-color: #fbfaf5;
   padding: 1.875rem 1.25rem;
   border: 1px solid #dcd3b2;
   line-height: 1;
   transition: 0.5s;
 }
-.ncard__pic {
+.archive .ncard__pic {
   width: 100%;
   height: auto;
   margin-bottom: 1.25rem;
 }
-.ncard__title {
+.archive .ncard__title {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin-bottom: 0.5rem;
   margin-left: 0.3125rem;
 }
-.ncard__time {
+.archive .ncard__time {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin-left: 0.3125rem;
 }
-.ncard:hover {
+.archive .ncard:hover {
   border-radius: 20px;
   background-color: #dcd3b2;
 }
-
-.allnavi {
+.archive .allnavi {
   padding: 0 0 7.5rem 0;
 }
-.allnavi__inner {
+.archive .allnavi__inner {
   max-width: 980px;
   width: 88.8888888889%;
   margin-left: auto;

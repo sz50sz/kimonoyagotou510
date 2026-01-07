@@ -36,6 +36,14 @@ function add_ogp_tags() {
 add_action('wp_head', 'add_ogp_tags');
 
 function my_scripts() {
+
+    wp_enqueue_style(
+        'main-style',
+        get_template_directory_uri() . '/css/style.css',
+        array(),
+        '1.0.0'
+    );
+
     wp_enqueue_script(
         'main-js',
         get_template_directory_uri() . '/js/main.js',
@@ -45,14 +53,6 @@ function my_scripts() {
     );
 }
 add_action('wp_enqueue_scripts', 'my_scripts');
-
-wp_enqueue_style(
-    'main-style',
-    get_template_directory_uri() . '/css/style.css',
-    array(),
-    '1.0.0'
-);
-
 add_filter('register_post_type_args', function($args, $post_type) {
   if ($post_type === 'post') {
     $slug = 'news';

@@ -118,35 +118,35 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //ナビ
 
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-    link.addEventListener('click', e => {
-        e.preventDefault();
+// document.querySelectorAll('a[href^="#"]').forEach(link => {
+//     link.addEventListener('click', e => {
+//         e.preventDefault();
 
-        const target = document.querySelector(link.getAttribute('href'));
-        if (!target) return;
+//         const target = document.querySelector(link.getAttribute('href'));
+//         if (!target) return;
 
-        const targetPos = target.getBoundingClientRect().top + window.pageYOffset;
-        const duration = 1600;
-        const startPos = window.pageYOffset;
-        const startTime = performance.now();
+//         const targetPos = target.getBoundingClientRect().top + window.pageYOffset;
+//         const duration = 1600;
+//         const startPos = window.pageYOffset;
+//         const startTime = performance.now();
 
-        function easeOutQuint(t) {
-            return 1 - Math.pow(1 - t, 5);
-        }
+//         function easeOutQuint(t) {
+//             return 1 - Math.pow(1 - t, 5);
+//         }
 
-        function animation(currentTime) {
-            const elapsed = currentTime - startTime;
-            const progress = Math.min(elapsed / duration, 1);
-            const eased = easeOutQuint(progress);
+//         function animation(currentTime) {
+//             const elapsed = currentTime - startTime;
+//             const progress = Math.min(elapsed / duration, 1);
+//             const eased = easeOutQuint(progress);
 
-            window.scrollTo(0, startPos + (targetPos - startPos) * eased);
+//             window.scrollTo(0, startPos + (targetPos - startPos) * eased);
 
-            if (elapsed < duration) requestAnimationFrame(animation);
-        }
+//             if (elapsed < duration) requestAnimationFrame(animation);
+//         }
 
-        requestAnimationFrame(animation);
-    });
-});
+//         requestAnimationFrame(animation);
+//     });
+// });
 
 //ヘッダー
 document.addEventListener("DOMContentLoaded", () => {
@@ -163,19 +163,61 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 //画面の途中に飛ぶやつ
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+// document.addEventListener("DOMContentLoaded", () => {
+//     document.querySelectorAll('a[href*="#"]').forEach(anchor => {
+//         anchor.addEventListener('click', function (e) {
+//             const hash = this.hash;
+//             if (!hash) return;
 
-        const target = document.querySelector(this.getAttribute('href'));
-        if (!target) return;
+//             const target = document.querySelector(hash);
+//             if (!target) return;
 
-        const headerOffset = 80; // ヘッダー高さ調整
-        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+//             e.preventDefault();
 
-        window.scrollTo({
-            top: targetPosition,
-            behavior: 'smooth'
+//             const headerOffset = 80;
+//             const targetPosition =
+//                 target.getBoundingClientRect().top +
+//                 window.pageYOffset -
+//                 headerOffset;
+
+//             window.scrollTo({
+//                 top: targetPosition,
+//                 behavior: 'smooth'
+//             });
+//         });
+//     });
+// });
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll('a[href*="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            // 1. リンク先のパスが現在のページと同じかチェック（別ページへのリンクは除外）
+            if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') &&
+                location.hostname === this.hostname) {
+
+                const hash = this.hash;
+                const target = document.querySelector(hash);
+
+                if (target) {
+                    e.preventDefault(); // ブラウザのパッと飛ぶ動きを止める
+
+                    // 2. 固定ヘッダーの高さを取得（固定ナビに .is-fixed が付くのを考慮）
+                    const header = document.querySelector(".navi");
+                    const headerHeight = header ? header.offsetHeight : 0;
+
+                    // 3. 目的地の計算（ターゲットの場所 - ヘッダーの高さ）
+                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+
+                    // 4. スムーススクロール実行
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+
+                    // 5. URLにハッシュを付与（必要なければ削除OK）
+                    history.pushState(null, null, hash);
+                }
+            }
         });
     });
 });
