@@ -277,7 +277,7 @@ section {
 
         &__shop {
             display: grid;
-            grid-template-columns: auto;
+            grid-auto-flow: column;
             justify-content: space-between;
             align-items: center;
         }
