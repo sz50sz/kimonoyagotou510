@@ -121,7 +121,7 @@ section {
 .footer {
   background-color: #1c273d;
   color: #fbfaf5;
-  padding: 10rem 0 5rem 0;
+  padding: 6.25rem 0 5rem 0;
 }
 .footer__inner {
   max-width: 980px;
@@ -162,11 +162,17 @@ section {
   text-align: center;
 }
 @media (width >= 640px) {
+  .footer__sns {
+    margin-bottom: 1.875rem;
+  }
   .footer__shop {
     display: grid;
-    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
     align-items: center;
+  }
+  .footer__copy {
+    margin-top: 1.875rem;
   }
 }
 

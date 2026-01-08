@@ -230,7 +230,7 @@ section {
 .footer {
     background-color: $color-main;
     color: $color-bg;
-    padding: rem(160) 0 rem(80) 0;
+    padding: rem(100) 0 rem(80) 0;
 
     &__inner {
         @include inner();
@@ -275,11 +275,19 @@ section {
 
     @include mq() {
 
+        &__sns {
+            margin-bottom: rem(30);
+        }
+
         &__shop {
             display: grid;
-            grid-auto-flow: column;
+            grid-template-columns: repeat(3, 1fr);
             justify-content: space-between;
             align-items: center;
+        }
+
+        &__copy {
+            margin-top: rem(30);
         }
 
     }
