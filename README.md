@@ -15,17 +15,19 @@
 ---
 
 ## 使用技術
-### Frontend
+### フロントエンド
 - HTML5 / CSS3（BEM設計）
 - JavaScript
+- Adobe Illustrator
+- Adobe Photoshop
+- Chat GPT
 
-### CMS
-- WordPress（オリジナルテーマ）
+### CMS / バックエンド
+- WordPress
 
-### External Services
-- BASE（オンラインストア作成）
+### 外部サービス・ツール
+- BASE（ECサイト連携）
 - PageSpeed Insights（表示速度の計測）
-
 ---
 
 ## 工夫した点
