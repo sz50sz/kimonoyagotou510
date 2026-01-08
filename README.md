@@ -22,7 +22,7 @@
 - Adobe Photoshop
 - Chat GPT
 
-### CMS / バックエンド
+### CMS
 - WordPress
 
 ### 外部サービス・ツール
