@@ -11,7 +11,7 @@
                         <?php if ( has_post_thumbnail() ) : ?>
                             <?php the_post_thumbnail('medium', ['class' => 'ncard__pic']); ?>
                         <?php else : ?>
-                            <img src="<?php echo get_template_directory_uri(); ?>/image/images/news.webp" class="ncard__pic" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/image/logo.webp" class="ncard__pic" alt="">
                         <?php endif; ?>
 
                         <h2 class="ncard__title"><?php the_title(); ?></h2>

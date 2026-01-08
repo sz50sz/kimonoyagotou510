@@ -230,7 +230,7 @@ section {
 .footer {
     background-color: $color-main;
     color: $color-bg;
-    padding: rem(200) 0;
+    padding: rem(160) 0 rem(80) 0;
 
     &__inner {
         @include inner();
@@ -274,27 +274,14 @@ section {
     }
 
     @include mq() {
-        &__info {
-            display: grid;
-            grid-auto-flow: column;
-            justify-content: space-between;
-        }
-
-        &__onlinestore {
-            text-align: left;
-        }
-
-        &__link {
-            order: 2;
-        }
 
         &__shop {
-            order: 1;
+            display: grid;
+            grid-template-columns: auto;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        &__sns {
-            justify-content: start;
-        }
     }
 
 }
@@ -773,7 +760,7 @@ section {
             grid-template-columns: repeat(2, 1fr);
             column-gap: 3%;
             row-gap: rem(30);
-            align-items: center;
+            align-items: start;
             justify-content: space-between;
 
             @include mq() {

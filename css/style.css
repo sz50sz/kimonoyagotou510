@@ -121,7 +121,7 @@ section {
 .footer {
   background-color: #1c273d;
   color: #fbfaf5;
-  padding: 12.5rem 0;
+  padding: 10rem 0 5rem 0;
 }
 .footer__inner {
   max-width: 980px;
@@ -162,22 +162,11 @@ section {
   text-align: center;
 }
 @media (width >= 640px) {
-  .footer__info {
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: space-between;
-  }
-  .footer__onlinestore {
-    text-align: left;
-  }
-  .footer__link {
-    order: 2;
-  }
   .footer__shop {
-    order: 1;
-  }
-  .footer__sns {
-    justify-content: start;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -654,7 +643,7 @@ section {
   -moz-column-gap: 3%;
        column-gap: 3%;
   row-gap: 1.875rem;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
 }
 @media (width >= 640px) {

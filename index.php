@@ -230,7 +230,7 @@
     <?php if (has_post_thumbnail()) : ?>
         <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php echo esc_attr( get_the_title() . 'のサムネイル' ); ?>" class="article__pic" loading="lazy">
     <?php else : ?>
-        <img src="<?php echo get_template_directory_uri(); ?>/image/images/news.webp" alt="記事なし" class="article__pic" loading="lazy">
+        <img src="<?php echo get_template_directory_uri(); ?>/image/logo.webp" alt="記事なし" class="article__pic" loading="lazy">
     <?php endif; ?>
 
     <div class="article__info">
