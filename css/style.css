@@ -287,27 +287,8 @@ section {
   overflow: hidden;
   transition: color 0.3s ease;
 }
-.article:nth-child(2n) {
-  grid-template-columns: 2fr 1fr;
-}
-.article:nth-child(2n) .article__pic {
-  order: 2;
-}
 @media (width >= 640px) {
-  .article:nth-child(2n) .article__pic {
-    order: 1;
-  }
-}
-.article:nth-child(2n) .article__info {
-  order: 1;
-}
-@media (width >= 640px) {
-  .article:nth-child(2n) .article__info {
-    order: 2;
-  }
-}
-@media (width >= 640px) {
-  .article:nth-child(2n) {
+  .article {
     grid-template-columns: 1fr 4fr;
   }
 }
@@ -319,11 +300,6 @@ section {
 }
 .article__text {
   font-size: 0.875rem;
-}
-@media (width >= 640px) {
-  .article {
-    grid-template-columns: 1fr 4fr;
-  }
 }
 
 .btn {

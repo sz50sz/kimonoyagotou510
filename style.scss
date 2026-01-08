@@ -410,32 +410,9 @@ section {
     overflow: hidden;
     transition: color .3s ease;
 
-    &:nth-child(2n) {
-
-        grid-template-columns: 2fr 1fr;
-
-        .article__pic {
-            order: 2;
-
-            @include mq() {
-                order: 1;
-            }
-        }
-
-        .article__info {
-            order: 1;
-
-            @include mq() {
-                order: 2;
-            }
-        }
-
-        @include mq() {
-            grid-template-columns: 1fr 4fr;
-        }
+    @include mq() {
+        grid-template-columns: 1fr 4fr;
     }
-
-
 
     &:last-child {
         margin-bottom: 0;
@@ -447,11 +424,6 @@ section {
 
     &__text {
         font-size: rem(14);
-    }
-
-    @include mq() {
-        grid-template-columns: 1fr 4fr;
-
     }
 }
 
